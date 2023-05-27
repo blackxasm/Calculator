@@ -1,0 +1,237 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+ }
+
+ h1 {
+     font-family: 'Poppins', sans-serif;
+     color: rgb(0, 0, 0);
+ }
+
+ .b-container {
+     display: inline-flex;
+ }
+
+ .c-container {
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     border-radius: 10px;
+     background-color: rgba(253, 250, 250, 0.512);
+     margin: 5rem;
+     margin-top: 4rem;
+     font-family: 'Poppins', sans-serif;
+     display: inline-flex;
+     flex-direction: column;
+ }
+
+ .container {
+     width: 18.5rem;
+     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+ }
+
+ .row {
+     font-size: 0;
+ }
+
+ .button {
+     border: none;
+     width: 74px;
+     padding: 14px;
+     font-size: 1.5rem;
+     cursor: pointer;
+ }
+
+ .row input {
+     background-color: rgba(253, 250, 250, 0.512);
+     font-size: 2rem;
+     border: none;
+     margin: 0;
+     width: 16rem;
+     padding: 20px;
+ }
+
+ .row input:focus {
+     outline: none;
+ } 
+
+ .row input:active {
+     border: none;
+ } 
+
+ .ex-width {
+     width: 148px;
+ }
+
+ .d-grey {
+     background-color: rgb(248, 247, 247);
+     color: rgb(30, 27, 27);
+ }
+
+ .grey {
+     background-color: rgb(252, 251, 251);
+     color: rgb(19, 19, 19);
+ }
+
+ .gold {
+     background-color: rgb(217, 210, 222);
+     color: rgb(119, 115, 115);
+ }
+
+ .history {
+     display: flex;
+     width: 240px;
+     height: 370px;
+     overflow-y: scroll;
+     font-size: 1.2rem;
+     box-sizing: border-box;
+ }
+
+ .history::-webkit-scrollbar {
+     width: 0;
+ }
+
+ .history h2 {
+     padding: 10px 0px;
+ }
+
+ .history p:last-child {
+     margin: 1rem;
+     font-size: 1rem;
+     font-weight: 400;
+ }
+
+ .m-container {
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     margin: 5rem;
+     margin-left: auto;
+     align-items: flex-end;
+     justify-content: flex-end;
+     display: flex;
+     width: fit-content;
+     background-color: white;
+     border-radius: 20px;
+ }
+
+ .m-container .history {
+     width: 18.5rem;
+     font-family: 'Poppins', sans-serif;
+     display: inline-flex;
+     flex-direction: column;
+ }
+
+ .calc-h {
+     font-family: 'Poppins', sans-serif;
+     display: inline-flex;
+     flex-direction: column;
+ }
+
+ .container {
+     text-align: center;
+ }
+
+
+ body {
+     margin: 0;
+     padding: 0;
+     background: linear-gradient(#928dd6, #8a10c2, #b489c7);
+ }
+
+ .editorial {
+     display: block;
+     width: 100%;
+     height: 120px;
+     max-height: 120px;
+     margin: 0;
+     z-index: 5;
+     top: 39rem;
+     position: relative;
+     left: 0px;
+     float: left;
+ }
+
+ .parallax1>use {
+     animation: move-forever1 10s linear infinite;
+
+     &:nth-child(1) {
+         animation-delay: -2s;
+     }
+ }
+
+ .parallax2>use {
+     animation: move-forever2 8s linear infinite;
+
+     &:nth-child(1) {
+         animation-delay: -2s;
+     }
+ }
+
+ .parallax3>use {
+     animation: move-forever3 6s linear infinite;
+
+     &:nth-child(1) {
+         animation-delay: -2s;
+     }
+ }
+
+ .parallax4>use {
+     animation: move-forever4 4s linear infinite;
+
+     &:nth-child(1) {
+         animation-delay: -2s;
+     }
+ }
+
+ @keyframes move-forever1 {
+     0% {
+         transform: translate(85px, 0%);
+     }
+
+     100% {
+         transform: translate(-90px, 0%);
+     }
+ }
+
+ @keyframes move-forever2 {
+     0% {
+         transform: translate(-90px, 0%);
+     }
+
+     100% {
+         transform: translate(85px, 0%);
+     }
+ }
+
+ @keyframes move-forever3 {
+     0% {
+         transform: translate(85px, 0%);
+     }
+
+     100% {
+         transform: translate(-90px, 0%);
+     }
+ }
+
+ @keyframes move-forever4 {
+     0% {
+         transform: translate(-90px, 0%);
+     }
+
+     100% {
+         transform: translate(85px, 0%);
+     }
+ }
+
+ .h-divider {
+     margin: auto;
+     margin-top: 80px;
+     width: 80%;
+     position: relative;
+ }
+
+ .h-divider .shadow {
+     overflow: hidden;
+     height: 0px;
+ }

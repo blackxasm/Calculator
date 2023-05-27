@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    canvas {
+        position: absolute;
+        z-index: -1;
+        display: inline-block;
+    }
+</style>
+
+<body>
+
+    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+        </defs>
+        <g class="parallax1">
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1" />
+        </g>
+        <g class="parallax2">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#a515e4" />
+        </g>
+        <g class="parallax3">
+            <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1" />
+        </g>
+        <g class="parallax4">
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff" />
+        </g>
+    </svg>
+    <section>
+        <div class="m-container">
+            <div class="c-container">
+                <div class="cal-name">
+                    <input type="text" placeholder="Enter Calculation Name" id="calculationName" class="text">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <input type="text" class="input" id="calculationInput" readonly>
+                    </div>
+                    <div class="row">
+                        <button class="button d-grey">AC</button>
+                        <button class="button d-grey">+/-</button>
+                        <button class="button d-grey">%</button>
+                        <button class="button gold">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="button grey">7</button>
+                        <button class="button grey">8</button>
+                        <button class="button grey">9</button>
+                        <button class="button gold">*</button>
+                    </div>
+                    <div class="row">
+                        <button class="button grey">4</button>
+                        <button class="button grey">5</button>
+                        <button class="button grey">6</button>
+                        <button class="button gold">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="button grey">1</button>
+                        <button class="button grey">2</button>
+                        <button class="button grey">3</button>
+                        <button class="button gold">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="button grey ex-width">0</button>
+                        <button class="button grey">.</button>
+                        <button class="button gold">=</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="calc-h">
+                <h2>Calculation History</h2>
+                <div class="delete-btn">
+                    <input type="checkbox" id="deleteCheckbox">
+                    <label for="deleteCheckbox">Delete History</label>
+                </div>
+                <div class="history">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <style>
+        .cal-name {
+            border: none;
+            text-align: center;
+            margin-top: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .text {
+            color: rgb(221, 52, 52);
+            border: 2px solid #8a10c2;
+            border-radius: 5px;
+            padding: 10px;
+            width: 80%;
+        }
+    </style>
+
+    <!--script-->
+    <script src="script.js"></script>
+</body>
+
+</html>
